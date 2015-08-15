@@ -1,0 +1,68 @@
+﻿<Page x:Class="gen.view.MainView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="Window">
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Orginal RGB" Grid.Column="0" Grid.Row="0"></Label>
+        <TextBox Grid.Column="0" Grid.Row="0" Name="oR" Width="30px" Height="20px" Margin="0,25,70,15" PreviewTextInput="PreviewTextInput" Text="0" TextChanged="SetOriginColor" />
+        <TextBox Grid.Row="0" Grid.Column="0" Name="oG" Width="30px" Height="20px" Margin="35,25,35,15" PreviewTextInput="PreviewTextInput" Text="0" TextChanged="SetOriginColor"/>
+        <TextBox Grid.Row="0" Grid.Column="0" Name="oB" Width="30px" Height="20px" Margin="70,25,0,15" PreviewTextInput="PreviewTextInput" Text="0" TextChanged="SetOriginColor" />
+        <Canvas Grid.Column="0" Grid.Row="1" Name="OriginCanvas" Grid.RowSpan="2"></Canvas>
+        <Button Grid.Column="0" Grid.Row="2" VerticalAlignment="Top" Content="StartNewGenetics" Click="Button_Click" Height="20"></Button>
+        <Button Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" Content="ContitueGen" Click="Button_Click2" Height="20"></Button>
+        <Button Grid.Column="0" Grid.Row="2" VerticalAlignment="Bottom" Content="FindIterations" Click="Button_Click3" Height="20"></Button>
+        <Grid Grid.Column="1" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Name="LowestFitness"></Label>
+        <Label Grid.Column="1" Grid.Row="0" Name="Iteration"></Label>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Canvas Grid.Column="0" Grid.Row="0" Name="c1"></Canvas>
+            <Canvas Grid.Column="1" Grid.Row="0" Name="c2"></Canvas>
+            <Canvas Grid.Column="2" Grid.Row="0" Name="c3"></Canvas>
+            <Canvas Grid.Column="0" Grid.Row="1" Name="c4"></Canvas>
+            <Canvas Grid.Column="1" Grid.Row="1" Name="c5"></Canvas>
+            <Canvas Grid.Column="2" Grid.Row="1" Name="c6"></Canvas>
+            <Canvas Grid.Column="0" Grid.Row="2" Name="c7"></Canvas>
+            <Canvas Grid.Column="1" Grid.Row="2" Name="c8"></Canvas>
+            <Canvas Grid.Column="2" Grid.Row="2" Name="c9"></Canvas>
+            <Label Grid.Column="0" Grid.Row="0" Name="l1"></Label>
+            <Label Grid.Column="1" Grid.Row="0" Name="l2"></Label>
+            <Label Grid.Column="2" Grid.Row="0" Name="l3"></Label>
+            <Label Grid.Column="0" Grid.Row="1" Name="l4"></Label>
+            <Label Grid.Column="1" Grid.Row="1" Name="l5"></Label>
+            <Label Grid.Column="2" Grid.Row="1" Name="l6"></Label>
+            <Label Grid.Column="0" Grid.Row="2" Name="l7"></Label>
+            <Label Grid.Column="1" Grid.Row="2" Name="l8"></Label>
+            <Label Grid.Column="2" Grid.Row="2" Name="l9"></Label>
+
+        </Grid>
+    </Grid>
+</Page>

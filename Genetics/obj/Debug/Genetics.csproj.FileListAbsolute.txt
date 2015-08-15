@@ -1,0 +1,5 @@
+c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\bin\Debug\Genetics.dll
+c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\bin\Debug\Genetics.pdb
+c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\obj\Debug\Genetics.csprojResolveAssemblyReference.cache
+c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\obj\Debug\Genetics.dll
+c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\obj\Debug\Genetics.pdb

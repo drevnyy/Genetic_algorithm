@@ -1,0 +1,4 @@
+c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\bin\Release\Genetics.dll
+c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\bin\Release\Genetics.pdb
+c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\obj\Release\Genetics.dll
+c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\obj\Release\Genetics.pdb
