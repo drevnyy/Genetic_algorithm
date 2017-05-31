@@ -2,3 +2,8 @@ c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\bin\Release\Ge
 c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\bin\Release\Genetics.pdb
 c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\obj\Release\Genetics.dll
 c:\Users\Zenek\documents\visual studio 2013\Projects\gen\Genetics\obj\Release\Genetics.pdb
+D:\git\Genetic_algorithm\Genetics\bin\Release\Genetics.dll
+D:\git\Genetic_algorithm\Genetics\bin\Release\Genetics.pdb
+D:\git\Genetic_algorithm\Genetics\obj\Release\Genetics.csprojResolveAssemblyReference.cache
+D:\git\Genetic_algorithm\Genetics\obj\Release\Genetics.dll
+D:\git\Genetic_algorithm\Genetics\obj\Release\Genetics.pdb

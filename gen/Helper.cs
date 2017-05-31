@@ -4,16 +4,27 @@ using System.Windows.Media;
 
 namespace gen // taki tam dump metod
 {
-    public static class Helper
+    public class Helper
     {
-        public static byte TextBoxToByte(TextBox oR)
+      private static Helper _h;
+      public static Helper H
+      {
+         get
+         {
+            if (_h == null)
+               _h = new Helper();
+            return _h;
+         }
+      }
+
+        public byte TextBoxToByte(TextBox oR)
         {
             if (!string.IsNullOrEmpty(oR.Text))
                 return IntToByte(int.Parse(oR.Text));
             return 0;
         }
 
-        public static byte IntToByte(int i)
+        public byte IntToByte(int i)
         {
             if (i < 0)
                 return 0;

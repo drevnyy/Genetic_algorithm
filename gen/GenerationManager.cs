@@ -19,7 +19,7 @@ namespace gen
 
         public Color[] StartNewGenetics(Color[] currentGen)
         {
-            _alg = new GeneticAlgorithm(FitnessCalculatorFunc, MutateFunc, CreateNextGenFunc, 9, 5);
+            _alg = GeneticAlgorithmBuilder.Build(FitnessCalculatorFunc, MutateFunc, CreateNextGenFunc, 9, 5);
             return ContinueGen(currentGen);
         }
         public Color[] ContinueGen(Color[] currentGen)
@@ -32,25 +32,25 @@ namespace gen
         }
 
 
-        private object CreateNextGenFunc(object o, object o1, Random r)
+        private object CreateNextGenFunc(object o, object o1)
         {
-            var childR = ComputeChild(((Color)o).R, ((Color)o1).R, r);
-            var childG = ComputeChild(((Color)o).G, ((Color)o1).G, r);
-            var childB = ComputeChild(((Color)o).B, ((Color)o1).B, r);
+            var childR = ComputeChild(((Color)o).R, ((Color)o1).R);
+            var childG = ComputeChild(((Color)o).G, ((Color)o1).G);
+            var childB = ComputeChild(((Color)o).B, ((Color)o1).B);
 
             Color c = new Color
             {
-                R = Helper.IntToByte(childR),
-                G = Helper.IntToByte(childG),
-                B = Helper.IntToByte(childB)
+                R = Helper.H.IntToByte(childR),
+                G = Helper.H.IntToByte(childG),
+                B = Helper.H.IntToByte(childB)
             };
             return c;
 
         }
 
-        private static int ComputeChild(byte c1, byte c2, Random r)
+        private static int ComputeChild(byte c1, byte c2)
         {
-            int mutationIndex = r.Next(100);
+            int mutationIndex = Randomizer.Instance.Next(100);
             var childR = c1 * mutationIndex + c2 * (100 - mutationIndex);
             if (childR % 100 >= 50)
                 childR = childR / 100 + 1;
@@ -59,17 +59,17 @@ namespace gen
             return childR;
         }
 
-        private object MutateFunc(object arg, double smallestFitness, Random r)
+        private object MutateFunc(object arg, double smallestFitness)
         {
-            //TODO: consider changing this field to dynamic
+            
             int mutationScale = 3;
-            if (r.Next(1000) < smallestFitness) //the more stable the smallest chance of mutation
+            if (Randomizer.Instance.Next(1000) < smallestFitness) 
             {
                 Color c = new Color
                 {
-                    R = Helper.IntToByte(((Color)arg).R + r.Next(-mutationScale, mutationScale)),
-                    G = Helper.IntToByte(((Color)arg).G + r.Next(-mutationScale, mutationScale)),
-                    B = Helper.IntToByte(((Color)arg).B + r.Next(-mutationScale, mutationScale))
+                    R = Helper.H.IntToByte(((Color)arg).R + Randomizer.Instance.Next(-mutationScale, mutationScale)),
+                    G = Helper.H.IntToByte(((Color)arg).G + Randomizer.Instance.Next(-mutationScale, mutationScale)),
+                    B = Helper.H.IntToByte(((Color)arg).B + Randomizer.Instance.Next(-mutationScale, mutationScale))
                 };
                 return c;
             }

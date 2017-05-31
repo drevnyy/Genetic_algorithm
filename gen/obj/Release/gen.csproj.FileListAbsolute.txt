@@ -17,3 +17,22 @@ c:\Users\Zenek\documents\visual studio 2013\Projects\gen\gen\obj\Release\gen.Pro
 c:\Users\Zenek\documents\visual studio 2013\Projects\gen\gen\obj\Release\gen.csproj.GenerateResource.Cache
 c:\Users\Zenek\documents\visual studio 2013\Projects\gen\gen\obj\Release\gen.exe
 c:\Users\Zenek\documents\visual studio 2013\Projects\gen\gen\obj\Release\gen.pdb
+D:\git\Genetic_algorithm\gen\bin\Release\gen.exe.config
+D:\git\Genetic_algorithm\gen\obj\Release\gen.exe
+D:\git\Genetic_algorithm\gen\obj\Release\gen.pdb
+D:\git\Genetic_algorithm\gen\bin\Release\gen.exe
+D:\git\Genetic_algorithm\gen\bin\Release\gen.pdb
+D:\git\Genetic_algorithm\gen\bin\Release\Genetics.dll
+D:\git\Genetic_algorithm\gen\bin\Release\Genetics.pdb
+D:\git\Genetic_algorithm\gen\obj\Release\gen.csprojResolveAssemblyReference.cache
+D:\git\Genetic_algorithm\gen\obj\Release\view\Window.baml
+D:\git\Genetic_algorithm\gen\obj\Release\MainWindow.g.cs
+D:\git\Genetic_algorithm\gen\obj\Release\view\Window.g.cs
+D:\git\Genetic_algorithm\gen\obj\Release\App.g.cs
+D:\git\Genetic_algorithm\gen\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\git\Genetic_algorithm\gen\obj\Release\gen_MarkupCompile.cache
+D:\git\Genetic_algorithm\gen\obj\Release\gen_MarkupCompile.lref
+D:\git\Genetic_algorithm\gen\obj\Release\MainWindow.baml
+D:\git\Genetic_algorithm\gen\obj\Release\gen.g.resources
+D:\git\Genetic_algorithm\gen\obj\Release\gen.Properties.Resources.resources
+D:\git\Genetic_algorithm\gen\obj\Release\gen.csproj.GenerateResource.Cache

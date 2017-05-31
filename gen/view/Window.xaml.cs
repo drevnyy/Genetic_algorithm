@@ -124,8 +124,8 @@ namespace gen.view
         {
             if (manager!=null && oR != null && oG != null && oB != null)
             {
-                manager.Target = Color.FromRgb(Helper.TextBoxToByte(oR), Helper.TextBoxToByte(oG),
-                    Helper.TextBoxToByte(oB));
+                manager.Target = Color.FromRgb(Helper.H.TextBoxToByte(oR), Helper.H.TextBoxToByte(oG),
+                    Helper.H.TextBoxToByte(oB));
                 OriginCanvas.Background = new SolidColorBrush(manager.Target);
             }
         }
